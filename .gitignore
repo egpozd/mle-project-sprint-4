@@ -212,3 +212,6 @@ recsys-*.tmp
 
 # Unfinished calculation blocks
 *.partial
+
+# Required stage 4 integration test output
+!test_service.log

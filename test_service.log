@@ -1,0 +1,6 @@
+HEALTH_OK instance=2944a998ed8b4b458b34a2f7ece54ede
+PASS A: unknown user -> 10 distinct popular recommendations
+PASS B: user_id=0, offline ranks match Parquet
+PASS C: online history affects recommendations (new track_id=22836932)
+PASS D: unknown track -> HTTP 404
+ALL HTTP INTEGRATION SCENARIOS PASSED
