@@ -183,15 +183,9 @@ data/
 output/
 catboost_info/
 
-# Local credentials and agent state
+# Local credentials and settings
 .aws/
 .ssh/
-.codex/
-.agents/
-.claude/
-.cursor/
-.aider.chat.history.md
-.aider.input.history
 
 # Local search indexes and cache metadata
 *.faiss
