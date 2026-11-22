@@ -125,7 +125,7 @@ class RecommendationStore:
                     return track
             return None
 
-        # До 3 онлайн-позиций среди 10; остальные — персональная/популярная выдача.
+        # Для позиций 1, 4 и 7 сначала используем похожие треки. Если остальных рекомендаций не хватает, похожие треки могут занять и другие позиции.
         for position in range(limit):
             prefer_online = position in (0, 3, 6)
             chosen_source = 0 if prefer_online else 1
