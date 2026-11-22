@@ -7,7 +7,7 @@ $ErrorActionPreference = 'Stop'
 $LocalDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $SshOptions = @('-o', 'BatchMode=yes', '-o', 'ConnectTimeout=10')
 
-# Work only under the dedicated stage-4 directory on the educational VM.
+# Работаем только в отдельной папке этапа 4 на учебной ВМ.
 if ($RemoteDir -ne '/home/ubuntu/recsys-data/service-stage4') {
     throw 'RemoteDir must be /home/ubuntu/recsys-data/service-stage4.'
 }
