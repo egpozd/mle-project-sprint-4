@@ -167,3 +167,48 @@ cython_debug/
 
 # project environment
 env_recsys_start/
+
+# Local data, models and credentials
+.env.*
+!.env.example
+*.ini
+*.pem
+*.key
+*.joblib
+*.npz
+*.npy
+*.cbm
+*.pkl
+data/
+output/
+catboost_info/
+
+# Local credentials and agent state
+.aws/
+.ssh/
+.codex/
+.agents/
+.claude/
+.cursor/
+.aider.chat.history.md
+.aider.input.history
+
+# Local search indexes and cache metadata
+*.faiss
+*.faiss.json
+*.npz.json
+*.cbm.json
+*.parquet.json
+file-digests.json
+cache-v3/
+output-v3/
+recsys-data/
+
+# Temporary project diagnostics
+.recsys-diagnostics/
+recsys-diagnostic-*.py
+recsys-audit-*.py
+recsys-*.tmp
+
+# Unfinished calculation blocks
+*.partial
